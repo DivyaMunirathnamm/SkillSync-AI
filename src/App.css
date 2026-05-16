@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to right,#141e30,#243b55);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.glass-card{
+    width:800px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:40px;
+    color:white;
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title{
+    text-align:center;
+    font-size:42px;
+    font-weight:bold;
 }
 
-.App-link {
-  color: #61dafb;
+.subtitle{
+    text-align:center;
+    margin-bottom:30px;
+    color:#ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea{
+    border-radius:15px !important;
+    padding:15px !important;
+}
+
+.analyze-btn{
+    width:100%;
+    padding:12px;
+    font-size:18px;
+    border-radius:15px;
+}
+
+.result-box{
+    background:rgba(255,255,255,0.1);
+    padding:25px;
+    border-radius:20px;
+}
+
+.badge-box{
+    display:inline-block;
+    margin:5px;
+    padding:10px 15px;
+    background:#0d6efd;
 }
